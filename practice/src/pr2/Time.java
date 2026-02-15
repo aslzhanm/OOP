@@ -1,4 +1,4 @@
-package p2;
+package pr2;
 
 public class Time {
 	
