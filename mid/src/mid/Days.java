@@ -1,0 +1,11 @@
+package mid;
+
+enum Days {
+	MONDAY,
+	TUESDAY,
+	WEDNESDAY,
+	THURSDAY,
+	FRIDAY,
+	SATURDY,
+	SUNDAY
+}
