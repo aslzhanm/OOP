@@ -12,4 +12,10 @@ public class Student extends Person {
     public String getOccupation() {
         return "Student of " + major;
     }
+    
+//  lab3
+    @Override
+    public void performAction() {
+    	System.out.println(name + " пишет диссертацию...");
+    }
 }

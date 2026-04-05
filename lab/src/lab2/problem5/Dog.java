@@ -9,4 +9,10 @@ public class Dog extends Animal {
     public String getSound() {
         return "Woof";
     }
+    
+    @Override
+    public void move() {
+        System.out.println(name + " бежит на четырех лапах!");
+    }
+    
 }

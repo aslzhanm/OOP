@@ -1,6 +1,6 @@
 package lab2.problem5;
 
-public abstract class Person {
+public abstract class Person implements Comparable<Person>, Cloneable, Movable, Actionable {
 	protected String name;
     protected int age;
     protected Animal pet; 
@@ -73,6 +73,22 @@ public abstract class Person {
     	other.removePet();
 
     	System.out.println(name + " retrieved " + temp + " from " + other.name);
+    }
+    
+//    lab3
+    @Override
+    public int compareTo(Person other) {
+        return Integer.compare(this.age, other.age);
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
+    public void move() {
+        System.out.println(name + " идет по своим делам.");
     }
     
 }

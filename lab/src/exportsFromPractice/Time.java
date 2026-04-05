@@ -1,4 +1,4 @@
-package pr2;
+package exportsFromPractice;
 
 public class Time implements Comparable<Time> {
 	
@@ -51,6 +51,12 @@ public class Time implements Comparable<Time> {
     public int compareTo(Time other) {
         return Integer.compare(this.toTotalSeconds(), other.toTotalSeconds());
     }
+	
+	@Override
+	public String toString() {
+	    return toUniversal();
+	}
+
 
 	public static void main(String[] args) {
 		Time t = new Time(23, 5, 6);
